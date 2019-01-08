@@ -1,20 +1,48 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="theme.css"> 
     <title>Personal Page</title>
-    <link rel="stylesheet" href="styles.css">
+   
   
-</head>
-    <body>
-    <p>Korábbi munkáim során elsősorban üzleti kapcsolattartással és adminisztrációval foglalkoztam. Azonban egyre inkább magával ragadott a programozás világa ezért most Junior fejlesztőként keresek állást.</p> 
-<p>Tough I unfortunately did not find my passion for software earlier in my career, I am completely retrained and eager to hit the ground running in an estabilished team</p>
-<p>A webes technológiák terén minden érdekel, igyekszem lépést tartani az újdonságokkal. Számos alkalmazást fejlesztettem, hogy bemutassam képességeim. Amelyek elérhetőek az alábbi linkeken.</p>
-Github link Code Pen link Youtube csatorna link</p>
+</head>   
+<body>
+  <img src="https://i.postimg.cc/pVj9RN7x/pexels-photo-1438994.jpg" alt="Background Image" id="background-image"  >
 
+  <div id="language">
+  <p id="language-txt">Change Language</p>
+  <img id="language-flag" src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English Flag">
+  </div>
+  <div id="message">
+  <h1 id="h1">Üdvözlet! János vagyok.</h1>
+
+   <p id="p1">Korábbi munkáim során üzleti kapcsolattartással és adminisztrációval foglalkoztam. Azonban egyre inkább magával ragadott a programozás világa ezért most Junior fejlesztőként keresek állást.</p> 
+
+  <p id="p2">A webes technológiák terén minden érdekel, igyekszem lépést tartani az újdonságokkal. Legutóbbi projektem egy varázslós témájú <a href="https://feigeljanos.github.io/Wizards-Game/" target="blank" id="link1">böngészős játék</a> volt. Jelenleg egy React alapú feladat lista appot fejlesztek.</p>
+  </div>
+   
+  <div id="pop" class="invisible">
+    <button id="x">x</button>
+   <span>
+     <h2 id="h2">Curriculum Vitae</h2>
+    <p id="p3">Töltsd le az önéletrajzom:</p>
+    
+    </span>
+    <a href="Feigel_Janos_CV.pdf" download id="link-cv">Letöltés</a>
+    <span>
+   <p id="p4">Itt elérhetőek az általam fejlesztett alkalmazások:</p>
+  <a href="https://github.com/FeigelJanos" target="blank" id="link-git">Github</a>
+  <a href="https://codepen.io/collection/XwrBMd/#" target="blank" id="link-code">Code Pen</a>
+  <a id="link-yt">Youtube csatorna</a> 
+    </span>
+  </div>
+  <div id="popup-div">
+  <button id="popup-button">Keress bátran!</button>
+  </div>
   
-</body>
+   <script src="index.js"></script>
+  </body>
 </html>
