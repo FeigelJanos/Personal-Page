@@ -1,6 +1,6 @@
 
 /*Cashing the DOM*/
-const popupStart_div = document.getElementById("popup-button");
+const popupStart_div = document.getElementById("popup-button");           //Page Elements
 const languageFlag_div = document.getElementById("language-flag");
 const xButton_div = document.getElementById("x");
 const popMessageDiv_body = document.getElementById("pop");
@@ -13,7 +13,7 @@ const h1_div = document.getElementById("h1");
 const p1_div = document.getElementById("p1");
 const p2_div = document.getElementById("p2");
 
-const popupH2_div = document.getElementById("h2");
+const popupH2_div = document.getElementById("h2");      //Popup Elements
 const popupP4_div = document.getElementById("p4");
 const cvLink_div = document.getElementById("link-cv");
 const popupP5_div = document.getElementById("p5");
@@ -21,7 +21,7 @@ const gitLink_div = document.getElementById("link-git");
 const codePenLink_div = document.getElementById("link-code");
 const ytLink_div = document.getElementById("link-yt");
   
-let activeLang="h";
+let activeLang="h";                                    //Global variable
 
 /*In case the popup is inactive, change the look of the page*/
 function popupClosed(){
@@ -44,7 +44,7 @@ backgroundImg_body.classList.add("popup-active");
 
 xButton_div.addEventListener('click', popupClosed);
 }
-/**/
+/*Change the language of the page if user clicked on flag*/
 function languageChange(){
   if (activeLang=="e"){
     activeLang="h";
