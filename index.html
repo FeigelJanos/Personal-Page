@@ -4,41 +4,41 @@
     <meta charset="MSZ_7795.3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="index.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	<title>Portfolio Page</title>
 </head>
 <body>
-<div id="Welcome-Slide">
+<div id="welcome-slide">
 
 <!-- Hamburger Menu Starts -->
-<div class="hamburger-nav">
-<nav role="navigation" >
-  <div id="menuToggle">
-    
-    <input type="checkbox" />
-    
-    
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <ul id="menu">
-      <a href="" id="language-change" class="hamburger"><li> Change Language</li></a>
-      <a href="#Welcome-Slide" class="hamburger"><li>Welcome</li></a>
-      <a href="#Projects-Slide" class="hamburger"><li>Projects</li></a>
-      <a href="#Contacts-Slide" class="hamburger"><li>Contact</li></a>
+<h3 id="menu-title" class="title"> Menu </h3>
+<span class="hamburger-menu">
+
+<div id=hamburger-start>
+
+    <span id="hspan1" class="top-menu"></span>
+    <span id="hspan2" class="top-menu"></span>
+    <span id="hspan3" class="top-menu"></span>
+ </div>
+ 
+    <ul id="menu" class="invisible">
+      <a href="" id="menu-language" class="hamburger"><li> Change Language</li></a>
+      <a href="#Welcome-Slide" id="menu-welcome" class="hamburger"><li>Üdvözlet</li></a>
+      <a href="#Projects-Slide" id="menu-projects" class="hamburger"><li>Projektek</li></a>
+      <a href="#Contacts-Slide" id="menu-contact" class="hamburger"><li>Kontakt</li></a>
     </ul>
-  </div>
-</nav>
-</div>
+
+</span>
 <!-- Hamburger Menu Ends -->
 
 <!-- Welcome message starts -->
 <div id="message">
-  <h1 id="welcome-title1">Üdvözlet! János vagyok.</h1>
-  <h2 id="welcome-title2">Junior webfejlesztő</h2>
+  <h1 id="welcome-title1" class="title">Üdvözlet! János vagyok.</h1>
+  <h2 id="welcome-title2" class="title">Webfejlesztő</h2>
 
    <p id="welcome-par1">Korábbi munkáim során főként üzleti kapcsolattartással foglalkoztam. Azonban egyre inkább magával ragadott a programozás világa,
    ezért most front end webfejlesztőként keresek állást.</p> 
@@ -53,7 +53,7 @@
   <div id="popup-div" class="invisible">
     <button id="close-popup">x</button>
    <span>
-     <h2 id="popup-title">Curriculum Vitae</h2>
+     <h2 id="popup-title" class="title">Curriculum Vitae</h2>
     <p id="popup-par1">Töltsd le az önéletrajzom:</p>
     </span>
 	
@@ -68,58 +68,72 @@
   </div>
   
   <div id="popup-button-div">
-  <span class="popup-text">
-  <p id="popup-par3">Keress bátran </p><i class="fas fa-arrow-right"></i>
-  </span>
+  <Button id="popup-button">
+  <p id="popup-par3">Keress bátran <i class="fas fa-arrow-right" id="arrow"></i></p>
+	</Button>
   </div>
   <!-- Popup window ends -->
   
 </div>
 
-<div id="Projects-Slide">
-<h1 id="project-title1">Projektjeim</h1>
-<p id="project-par1"> Bár még nem rendelkezem professzionális tapasztalatokkal, úgy gondolom, hogy a megszerzett tudás akkor válik igazán hasznossá, ha gyakorlatban is alkalmazható. Ezért mindíg szánok időt arra, hogy hogy amit megtanultam néhány projekt keretében is kipróbáljam.  </p>
-<p id="project-par2">Számos projektet készítettem, amelyek közül néhány nemrég befejezett alább elérhető.</p>
+<div id="projects-slide">
+<h1 id="project-title1" class="title">Projektjeim</h1>
+<p id="project-par1"> Bár még nem rendelkezem professzionális tapasztalatokkal, úgy gondolom, hogy a megszerzett tudás akkor válik igazán hasznossá, ha gyakorlatban is alkalmazható. Ezért mindíg szánok időt arra, hogy az új ismereteket egy-egy projekt keretében is kipróbáljam.  </p>
+<p id="project-par2">Számos projektet készítettem, amelyek közül néhány alább elérhető.</p>
 
-<h2 id="project-title2">Néhány friss projektem:</h2> 
+<h2 id="project-title2" class="title">Friss projektjeim:</h2> 
     
     <div id="web-projects">
     
-    <div class="project-card">
-       <a id="link-project1" href=""><img  class="project-card" src="" alt="Reszponzív kérdőív"></a>
-      <p id="project-card-par1">Reszponzív kérdőív</p>
-     </div>
     
-    <div class="project-card">
-       <a id="link-project2" href=""><img  class="project-card" src="" alt="Kő-papír-olló"></a>
-      <p id="project-card-par2">Kő-papír-olló</p>
-    </div>
+       <a class="project-card" id="link-project1" href="https://feigeljanos.github.io/First_Survey/" target="blank">
+		<div class="card-container">
+			<img  class="project-img" src="Kerdoiv.png" alt="Reszponzív kérdőív">
+			<p id="project-card-par1">Reszponzív kérdőív</p>
+		</div>
+	   </a>
+     
+       <a class="project-card" id="link-project2" href="https://feigeljanos.github.io/Ko_Papir_Ollo/" target="blank">
+		<div class="card-container">
+			<img  class="project-img" src="Ko_Papir_Ollo.png" alt="Kő-papír-olló"> 
+			<p id="project-card-par2">Kő-papír-olló</p>
+		</div>
+	   </a>
     
-    <div class="project-card">
-      <a id="link-project3" href=""><img  class="project-card" src="" alt="Varázsló párbaj"></a>
-      <p id="project-card-par2">Varázsló párbaj</p>
-    </div>
+	<a class="project-card" id="link-project3" href="https://feigeljanos.github.io/Wizards-Game/" target="blank">
+      <div class="card-container">
+		<img   class="project-img" src="V2.png" alt="Varázsló párbaj"> 
+		<p id="project-card-par3">Varázsló párbaj</p> 
+	  </div>
+    </a>
+	
     </div>
 
 </div>
 
-<div id="Contacts-Slide">
-<h1 id="contact-title1">Elérhetőségeim: </h1>
-<p id="contact-par1">Elérhető vagyok az önéletrajzomban megadott elérhetőségek mindegyikén. De itt megtalálod a facebook profilom (ritkán használom) és a magán email címem is.</p>
+<div id="contacts-slide">
+<h1 id="contact-title1" class="title">Elérhetőségeim: </h1>
+<p id="contact-par1">Elérhető vagyok az önéletrajzomban megadott elérhetőségek mindegyikén. De itt megtalálod a skype profilom és az email címem is.</p>
 
-<h2 id="contact-title2">Dolgozzunk együtt!</h2>
+<h2 id="contact-title2" class="title">Dolgozzunk együtt!</h2>
 
+<div class="contacts-footer">
 <div id="mail-button">
-<i class="fas fa-envelope"></i><a id="link-mail"> Mail </a>
+<a id="link-mail" href="mailto:feigel_janos@yahoo.com"><i class="fas fa-envelope"></i> Mail </a>
 </div>
 
-<div id="facebook-button">    
-<i class="fab fa-facebook"></i><a id="link-facebook"> Facebook </a>
+<div id="skype-button">    
+<a id="link-skype" href="skype:feigel_janos?call"><i class="fab fa-skype"></i> Skype </a>
 </div>
 
+
+<div id="github-button">    
+<a id="link-github" href="https://github.com/FeigelJanos/" target="blank"><i class="fab fa-github-square"></i> GitHub </a>
+</div>
+</div>
 </div>
 
-<script src="index.js"></script>
+
 
 </body>
 </html>
