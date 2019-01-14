@@ -26,6 +26,7 @@
  </div>
  
     <ul id="menu" class="invisible">
+	  <a href="" id="menu-close" class="hamburger"><li> X </li></a>
       <a href="" id="menu-language" class="hamburger"><li> Change Language</li></a>
       <a href="#Welcome-Slide" id="menu-welcome" class="hamburger"><li>Üdvözlet</li></a>
       <a href="#Projects-Slide" id="menu-projects" class="hamburger"><li>Projektek</li></a>
@@ -50,21 +51,27 @@
 
 <!-- Popup window starts -->
 
-  <div id="popup-div" class="invisible">
-    <button id="close-popup">x</button>
-   <span>
-     <h2 id="popup-title" class="title">Curriculum Vitae</h2>
+  <div id="popup-div" class="visible">
+   <div id="popup-header">
+   
+   <button id="close-popup">x</button>
+     <h2 id="popup-title" >Curriculum Vitae</h2>
+	 
+	 </div>
+	 
+	<div id="popup-middle">
     <p id="popup-par1">Töltsd le az önéletrajzom:</p>
-    </span>
+    
 	
     <a href="Feigel_Janos_CV.pdf" download id="link-cv">Letöltés</a>
+	</div>
 	
-    <span>
+    <div id="popup-footer">
 	<p id="popup-par2">Itt találod a projekjteim:</p>
 	<a href="https://github.com/FeigelJanos" target="blank" id="link-git">GitHub</a>
 	<a href="https://codepen.io/collection/XwrBMd/#" target="blank" id="link-code">Code Pen</a>
-	<a id="link-yt">Youtube csatorna</a> 
-    </span>
+	<a href="" target="blank" id="link-yt">Youtube csatorna</a> 
+    </div>
   </div>
   
   <div id="popup-button-div">
@@ -88,21 +95,21 @@
     
        <a class="project-card" id="link-project1" href="https://feigeljanos.github.io/First_Survey/" target="blank">
 		<div class="card-container">
-			<img  class="project-img" src="https://i.postimg.cc/GtNQpLcv/Kerdoiv.png" alt="Reszponzív kérdőív">
+			<img  class="project-img" src="Kerdoiv.png" alt="Reszponzív kérdőív">
 			<p id="project-card-par1">Reszponzív kérdőív</p>
 		</div>
 	   </a>
      
        <a class="project-card" id="link-project2" href="https://feigeljanos.github.io/Ko_Papir_Ollo/" target="blank">
 		<div class="card-container">
-			<img  class="project-img" src="https://i.postimg.cc/J4Dx2kqx/Ko-Papir-Ollo.png" alt="Kő-papír-olló"> 
+			<img  class="project-img" src="Ko_Papir_Ollo.png" alt="Kő-papír-olló"> 
 			<p id="project-card-par2">Kő-papír-olló</p>
 		</div>
 	   </a>
     
 	<a class="project-card" id="link-project3" href="https://feigeljanos.github.io/Wizards-Game/" target="blank">
       <div class="card-container">
-		<img   class="project-img" src="https://i.postimg.cc/T3n9RvBW/V2.png" alt="Varázsló párbaj"> 
+		<img   class="project-img" src="V2.png" alt="Varázsló párbaj"> 
 		<p id="project-card-par3">Varázsló párbaj</p> 
 	  </div>
     </a>
