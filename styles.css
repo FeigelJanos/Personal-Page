@@ -23,12 +23,11 @@ background: black;
 	right: 3.5em;
 	margin-top: 0.6em;
 }
-.hamburger-menu{
+
+#hamburger-start{
 	position: absolute;
 	top: 0;
 	right: 0;
-}
-#hamburger-start{
 	margin-top: 1em;
 	margin-bottom: 1em;
 	margin-right: 1em;
@@ -60,7 +59,6 @@ background: black;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   cursor: pointer;
-  text-decoration: none;
   color: #232323;
   
   transition: color 0.3s ease;
@@ -68,9 +66,34 @@ background: black;
 
 .hamburger:hover
 {
-  color: #FF7F00;
+  color: blue;
+  background: grey;
 }
-
+#menu-contents{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	background: blue;
+	margin: 0;
+}
+#menu{
+	list-style-position: inside;
+	background: white;	  
+}
+#menu li {
+  font-size: 1.1em;
+  padding: 1.2em 1.6em 1.2em 1.6em;
+}
+#menu-welcome{
+	text-decoration: none;
+}
+#menu-projects{
+	text-decoration: none;
+}
+#menu-contact{
+	text-decoration: none;
+}
 
 
 .title{
@@ -103,20 +126,96 @@ margin-top: 4em;
 .invisible{
 	display: none;
 }
-
-.visible{
-  height: 60vh;
-  width: 60vw;
+.visible-pop{
+  min-height: 360px;
+  width: 50vw;
   position: fixed;
-  top: 20vh;
-  right: 20vw;
-  padding: 10px;
-  border-radius: 9px;
-  background: #FFFFFF;
+  z-index: 2;
+  top: 15vh;
+  right: 25vw;
+  border-radius: 20px;
+  background: white;
+  text-align: center;
+}
+@media screen and (max-width: 720px){
+	.visible-pop{
+ 
+  width: 70vw;
+  top: 10vh;
+  right: 13vw;
 }
 
-.popup-active{
-  filter: brightness(30%);
+}
+
+@media screen and (max-width: 400px){
+	.visible-pop{
+
+  width: 85vw;
+  top: 8vh;
+  right: 5vw;
+}
+
+}
+#popup-header{
+	background: blue;
+	border-radius: 10px 10px 0px 0px;
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+	border-bottom: 2px solid grey;
+}
+#popup-title{
+	font-weight: 800;
+}
+#close-popup{
+	position: absolute;
+	right: 0.5em;
+	top: 0;
+	background: none;
+	border: none;
+	font-size: 1.5em;
+	cursor: pointer;
+	color: white;
+}
+#popup-middle{
+	color: black;
+}
+#popup-par1{
+	text-align: center;
+	color: black;
+	margin: 0;
+	padding: 2em 0 3em 0;
+}
+#link-cv{
+	width: 150px;
+	background: blue;
+	padding: 1em 1.5em 1em 1.5em;
+	color: white;
+	border-radius: 20px;
+	border: 2px solid grey;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#popup-footer{
+	position: absolute;
+	bottom: 0;
+	background: blue;
+	width: inherit;
+	border-radius: 0px 0px 10px 10px;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	border-top: 2px solid grey;
+}
+#popup-par2{
+	min-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.popup-footer-link{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
 }
 
 #popup-button-div{
@@ -150,6 +249,7 @@ margin-top: 4em;
 padding: 0;
 margin: 0;
 }
+
 #project-title1{
 margin-bottom: 1.5em;	
 }
@@ -262,10 +362,7 @@ color: white;
 	#welcome-title2{
 	margin-bottom: 2em;
 	}
-	#popup-button{
-	margin-top: 3em;
-	margin-bottom: 3em;
-	}
+	
 	#project-title1{
 		margin-top: 2em;	
 	}
@@ -294,3 +391,4 @@ color: white;
 	}
 	
 }
+
