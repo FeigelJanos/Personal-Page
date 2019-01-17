@@ -1,5 +1,9 @@
+
 /*Cacheing the DOM*/
-const body_HTML = document.getElementById("body");
+
+const welcomeSlide_div = document.getElementById("message");
+const projectSlide_div = document.getElementById("projects-slide");
+const contactSlide_div = document.getElementById("contacts-slide");
 
 const hamburgerOuterText_div = document.getElementById("menu-title");
 const hamburgerInactive_div = document.getElementById("hamburger-start");
@@ -15,6 +19,7 @@ const welcomeP1_div = document.getElementById("welcome-par1");
 const welcomeP2_div = document.getElementById("welcome-par2");
 const welcomePopupOpenerButton_div = document.getElementById("popup-button");
 const welcomePopupOpenerText_button = document.getElementById("popup-par3");
+const popupButtonContainer_div = document.getElementById("popup-button-div");
 
 const popupWindow_div = document.getElementById("popup-div");
 const popupCloseButton_div = document.getElementById("close-popup");
@@ -52,16 +57,40 @@ function hamurgerActivate(){
 	console.log("Hamburger works");
 }
 
-function popupActivate(){
-popupWindow_div.classList.add("visible-pop"); 
-popupWindow_div.classList.add("popup-active-popup"); 
-popupWindow_div.classList.remove("invisible");
-  
-body_HTML.classList.add("popup-active-body");
-
-popupCloseButton_div.addEventListener('click', popupClose);
+function popupClose(){
+	popupWindow_div.classList.remove("visible-pop"); //Popup becomes visible
+	popupWindow_div.classList.add("invisible"); 
+	
+	hamburgerOuterText_div.classList.remove("popup-active-darken"); //Everything becomes darker
+	hamburgerInactive_div.classList.remove("popup-active-darken"); 
+	popupButtonContainer_div.classList.remove("popup-active-darken");
+	welcomeSlide_div.classList.remove("popup-active-darken");
+	projectSlide_div.classList.remove("popup-active-darken");
+	contactSlide_div.classList.remove("popup-active-darken");
+	
+	hamburgerInactive_div.addEventListener("click", hamurgerActivate);
+	
+	popupCloseButton_div.removeEventListener('click', popupClose);
 }
 
+/*If you click on the button, pop up pops up.*/
+function popupActivate(){
+popupWindow_div.classList.add("visible-pop"); //Popup becomes visible
+popupWindow_div.classList.remove("invisible"); 
+ 
+hamburgerOuterText_div.classList.add("popup-active-darken"); //Everything becomes darker
+hamburgerInactive_div.classList.add("popup-active-darken"); 
+popupButtonContainer_div.classList.add("popup-active-darken");
+welcomeSlide_div.classList.add("popup-active-darken");
+projectSlide_div.classList.add("popup-active-darken");
+contactSlide_div.classList.add("popup-active-darken");
+
+hamburgerInactive_div.removeEventListener("click", hamurgerActivate, false); //Hamburger menu does not react
+
+popupCloseButton_div.addEventListener('click', popupClose); //If you click on the x popup closes
+}
+
+/*Main fuction. First thing to start*/
 function main(){
 	hamburgerLanguageButton_div.addEventListener("click", languageChange);
 	hamburgerInactive_div.addEventListener("click", hamurgerActivate);
@@ -69,5 +98,5 @@ function main(){
 	
 }
 
-
+/*Starting program*/
 main();
