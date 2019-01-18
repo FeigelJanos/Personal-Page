@@ -53,10 +53,18 @@ function languageChange(){
 	console.log("Language works");
 }
 
-function hamurgerActivate(){
-	console.log("Hamburger works");
+function hamburgerBaseState(){
+	
 }
 
+function hamurgerActivate(){
+	hamburgerInactive_div.classList.add("invisible");
+	
+	hamburgerActive_div.classList.remove("invisible");
+	
+	
+}
+/*Closing the popup if you click on the x*/
 function popupClose(){
 	popupWindow_div.classList.remove("visible-pop"); //Popup becomes visible
 	popupWindow_div.classList.add("invisible"); 
@@ -100,3 +108,4 @@ function main(){
 
 /*Starting program*/
 main();
+
