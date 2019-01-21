@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="MSZ_7795.3">
+    <meta HTTP-EQUIV="Content-Type" Content="text/html; Charset=iso-8859-2">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="index.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	<title>Portfolio Page</title>
 </head>
-<body>
+<body >
 <div id="welcome-slide">
 
 <!-- Hamburger Menu Starts -->
-<h3 id="menu-title" class="title"> Menu </h3>
+<h3 id="menu-title" class="title"> Menü </h3>
 <span class="hamburger-menu">
 
 <div id="hamburger-start">
@@ -24,12 +23,12 @@
     <span id="hspan2" class="top-menu"></span>
     <span id="hspan3" class="top-menu"></span>
  </div>
- <div class="invisible" id="menu-contents">
+ <div  id="menu-contents">
     <ul id="menu" >
-      <li id="menu-language" class="hamburger"> Change Language</li>
-      <a href="#welcome-slide" id="menu-welcome"><li class="hamburger">Üdvözlet</li></a>
-      <a href="#projects-slide" id="menu-projects"><li class="hamburger">Projektek</li></a>
-      <a href="#contacts-slide" id="menu-contact"><li class="hamburger">Kontakt</li></a>
+      <li id="menu-language" class="hamburger">Change Language</li>
+      <a href="#welcome-slide" id="menu-welcome"><li class="hamburger" id="welcome-text">Üdvözlet</li></a>
+      <a href="#projects-slide" id="menu-projects"><li class="hamburger" id="project-text">Projektek</li></a>
+      <a href="#contacts-slide" id="menu-contact"><li class="hamburger" id="contact-text">Elérhetőségek</li></a>
     </ul>
 </div>
 </span>
@@ -67,18 +66,21 @@
 	
     <div id="popup-footer">
 	<p id="popup-par2">Itt megtalálod a projekjteim:</p>
+	<div id="footer-grid">
 	<a href="https://github.com/FeigelJanos" target="blank" id="link-git" class="popup-footer-link">GitHub</a>
 	<a href="https://codepen.io/collection/XwrBMd/#" target="blank" id="link-code" class="popup-footer-link">Code Pen</a>
 	<a href="" target="blank" id="link-yt" class="popup-footer-link">Youtube csatorna</a> 
+	</div>
     </div>
   </div>
+  <!-- Popup window ends -->
   
   <div id="popup-button-div">
   <Button id="popup-button">
-  <p id="popup-par3">Keress bátran <i class="fas fa-arrow-right" id="arrow"></i></p>
+  <p id="popup-par3">Keress bátran </p><i class="fas fa-arrow-right" id="arrow"></i>
 	</Button>
   </div>
-  <!-- Popup window ends -->
+  
   
 </div>
 
@@ -139,7 +141,7 @@
 </div>
 </div>
 
-
+<script src="index.js"></script>
 <!-- https://postimg.cc/gallery/2k5ewg0oy/ -->
 </body>
 </html>
