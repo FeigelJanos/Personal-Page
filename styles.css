@@ -1,4 +1,3 @@
-
 html {
   box-sizing: border-box;
 }
@@ -49,10 +48,9 @@ background: black;
   
   transform-origin: 4px 0px;
   
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  
 }
+
 
 .hamburger
 {
@@ -70,12 +68,13 @@ background: black;
   background: grey;
 }
 #menu-contents{
-	position: absolute;
+	position: fixed;
 	top: 0;
-	right: 0;
+	right: -225px;
 	z-index: 2;
-	background: blue;
 	margin: 0;
+	width: 225px;
+	
 }
 #menu{
 	list-style-position: inside;
@@ -125,6 +124,10 @@ margin-top: 4em;
 
 .invisible{
 	display: none;
+}
+
+.popup-active-darken{
+  filter: brightness(30%);
 }
 .visible-pop{
   min-height: 360px;
@@ -206,6 +209,13 @@ margin-top: 4em;
 	padding-bottom: 1em;
 	border-top: 2px solid grey;
 }
+#footer-grid{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 3vw;
+	justify-content: center;
+	
+}
 #popup-par2{
 	min-width: 200px;
 	margin-left: auto;
@@ -240,14 +250,16 @@ margin-top: 4em;
 }
 
 #arrow{
+	display: inline-block;
  font-size: 0.8em;	
  padding: 0;
  margin: 0;
 
 }
 #popup-par3{
+	display: inline-block;
 padding: 0;
-margin: 0;
+margin: 0 0.5em 0 0;
 }
 
 #project-title1{
@@ -391,4 +403,3 @@ color: white;
 	}
 	
 }
-
