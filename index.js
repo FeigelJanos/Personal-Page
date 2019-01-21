@@ -1,4 +1,5 @@
 
+
 /*Cacheing the DOM*/
 
 const welcomeSlide_div = document.getElementById("message");
@@ -50,18 +51,73 @@ const contactsSkypeButton = document.getElementById("link-skype");
 const contactsGitHubButton = document.getElementById("link-github");
 
 function languageChange(){
-	console.log("Language works");
+
+	if (hamburgerOuterText_div.innerHTML == ' Menü '){
+		
+	hamburgerOuterText_div.innerHTML= ' Menu ';
+	hamburgerLanguageButton_div.innerHTML = 'Nyelv Váltás';
+	hamburgerWelcomeButton_div.innerHTML = 'Welcome';
+	hamburgerProjectsButton_div.innerHTML = 'Projects';
+	hamburgerContactsButton_div.innerHTML = 'Contacts';
+	
+	welcomeH1_div.innerHTML = 'Hey! I am John.';
+	welcomeH2_div.innerHTML = 'Web Developer';
+	welcomeP1_div.innerHTML = "I'm a junior developer ready to enter the major leagues. I try my best to create great user experience with performant and well designed apps and websites.";
+	welcomeP2_div.innerHTML = 'I am interested in all aspects of the creation of web applications, and eager to hit the ground running in an established team.';//Ide még 1 mondat
+	welcomePopupOpenerText_button.innerHTML = 'Hire Me';
+
+	popupP1_div.innerHTML = "Grab my CV here:";
+	popupCVDownloadButton_div.innerHTML = "Download";
+	popupP2_div.innerHTML = "You can find all my projects below:";
+	popupYoutubeLink_div.innerHTML = "Youtube channel";
+	}
+	else {
+	hamburgerOuterText_div.innerHTML = ' Menü ';
+	hamburgerLanguageButton_div.innerHTML = 'Change Language';
+	hamburgerWelcomeButton_div.innerHTML = 'Üdvözlet';
+	hamburgerProjectsButton_div.innerHTML = 'Projektek';
+	hamburgerContactsButton_div.innerHTML = 'Elérhetőségek';
+	
+	welcomeH1_div.innerHTML = 'Üdvözlet! János vagyok.';
+	welcomeH2_div.innerHTML = 'Webfejlesztő';
+	welcomeP1_div.innerHTML = 'Korábbi munkáim során főként üzleti kapcsolattartással foglalkoztam. Azonban egyre inkább magával ragadott a programozás világa, ezért most front end webfejlesztőként keresek állást.';
+	welcomeP2_div.innerHTML = 'A webes technológiák terén minden érdekel, igyekszem lépést tartani az újdonságokkal. Célom a gyors, felhasználóbarát weboldalak és appok készítése. ';
+	welcomePopupOpenerText_button.innerHTML = 'Keress bátran';
+	
+	popupP1_div.innerHTML = "Töltsd le az önéletrajzom:";
+	popupCVDownloadButton_div.innerHTML = "Letöltés";
+	popupP2_div.innerHTML = "Itt megtalálod a projekjteim:";
+	popupYoutubeLink_div.innerHTML = "Youtube csatorna";
+	}
 }
 
 function hamburgerBaseState(){
+	hamburgerActive_div.classList.add("invisible");
+	
+
+	hamburgerActive_div.style.right = -225+'px';
+	
+	hamburgerActive_div.removeEventListener('mouseleave', hamburgerBaseState, false);
 	
 }
 
+
 function hamurgerActivate(){
-	hamburgerInactive_div.classList.add("invisible");
 	
 	hamburgerActive_div.classList.remove("invisible");
 	
+  let right = -225;
+  let id = setInterval(frame, 5);
+  function frame() {
+    if (right == 0) {
+      clearInterval(id);
+    } else {
+      right+=5;
+      hamburgerActive_div.style.right = right + 'px';
+    }
+  
+}
+hamburgerActive_div.addEventListener('mouseleave', hamburgerBaseState);
 	
 }
 /*Closing the popup if you click on the x*/
@@ -108,4 +164,3 @@ function main(){
 
 /*Starting program*/
 main();
-
