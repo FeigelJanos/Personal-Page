@@ -1,5 +1,6 @@
 
 
+
 /*Cacheing the DOM*/
 
 const welcomeSlide_div = document.getElementById("message");
@@ -61,15 +62,27 @@ function languageChange(){
 	hamburgerContactsButton_div.innerHTML = 'Contacts';
 	
 	welcomeH1_div.innerHTML = 'Hey! I am John.';
-	welcomeH2_div.innerHTML = 'Web Developer';
-	welcomeP1_div.innerHTML = "I'm a junior developer ready to enter the major leagues. I try my best to create great user experience with performant and well designed apps and websites.";
-	welcomeP2_div.innerHTML = 'I am interested in all aspects of the creation of web applications, and eager to hit the ground running in an established team.';//Ide még 1 mondat
+	welcomeH2_div.innerHTML = ' A web developer';
+	welcomeP1_div.innerHTML = "I'm a junior developer ready to enter the major leagues. I try my best to create great user experience with performant and well designed apps and websites. And to keep up with the newest techniques and tools in development.";
+	welcomeP2_div.innerHTML = 'I am interested in all aspects of the creation of web applications, and eager to hit the ground running in an established team.';
 	welcomePopupOpenerText_button.innerHTML = 'Hire Me';
 
 	popupP1_div.innerHTML = "Grab my CV here:";
 	popupCVDownloadButton_div.innerHTML = "Download";
 	popupP2_div.innerHTML = "You can find all my projects below:";
 	popupYoutubeLink_div.innerHTML = "Youtube channel";
+	
+	projectsH1_div.innerHTML = "Projects";
+	projectsP1_div.innerHTML = "I strongly belive that in programming the aquired knowledge in applicaton. I allways strive to create "; //Megírni
+	projectsP2_div.innerHTML = "I created several projects, some of which can be found below";
+	projectsH2_div.innerHTML = "Recent projects:";
+	projectsFirstProjectText_div.innerHTML = "Responsive survey"; 
+	projectsSecondProjectText_div.innerHTML = "Rock-paper-scissors";
+	projectsThirdProjectText_div.innerHTML = "Wizard duel";
+	
+	contactsH1_div.innerHTML = "Contacts";
+	contactsP1_div.innerHTML = "Feel free to contact me on any of the channels detailed in my CV. But here you can also find my skype and email address.";
+	contactsH2_div.innerHTML = "Let's work together!";
 	}
 	else {
 	hamburgerOuterText_div.innerHTML = ' Menü ';
@@ -88,6 +101,18 @@ function languageChange(){
 	popupCVDownloadButton_div.innerHTML = "Letöltés";
 	popupP2_div.innerHTML = "Itt megtalálod a projekjteim:";
 	popupYoutubeLink_div.innerHTML = "Youtube csatorna";
+	
+	projectsH1_div.innerHTML = "Projektjeim";
+	projectsP1_div.innerHTML = "Bár még nem rendelkezem professzionális tapasztalatokkal, úgy gondolom, hogy a megszerzett tudás akkor válik igazán hasznossá, ha gyakorlatban is alkalmazható. Ezért mindíg szánok időt arra, hogy az új ismereteket egy-egy projekt keretében is kipróbáljam.";
+	projectsP2_div.innerHTML = "Számos projektet készítettem, amelyek közül néhány alább elérhető.";
+	projectsH2_div.innerHTML = "Friss projektjeim:";
+	projectsFirstProjectText_div.innerHTML = "Reszponzív kérdőív"; 
+	projectsSecondProjectText_div.innerHTML = "Kő-papír-olló";
+	projectsThirdProjectText_div.innerHTML = "Varázsló párbaj";
+	
+	contactsH1_div.innerHTML = "Elérhetőségeim";
+	contactsP1_div.innerHTML = "Elérhető vagyok az önéletrajzomban megadott elérhetőségek mindegyikén. De itt megtalálod a skype profilom és az email címem is.";
+	contactsH2_div.innerHTML = "Dolgozzunk együtt!";
 	}
 }
 
