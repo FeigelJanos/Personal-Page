@@ -14,15 +14,16 @@ padding: 0;
 body{
 font-family: 'Montserrat', sans-serif;
 color: white;
-background: black;
+background: #151515;
+
 }
+
 #menu-title{
 	position: absolute;
 	top: 0em;
 	right: 3.5em;
 	margin-top: 0.6em;
 }
-
 #hamburger-start{
 	position: absolute;
 	top: 0;
@@ -33,6 +34,7 @@ background: black;
 	cursor: pointer;
 	width: 33px;
 	height: 22px;
+	background: rgba(0,0,0,0.0);
 }
 .top-menu{
   display: block;
@@ -177,7 +179,11 @@ margin-top: 4em;
 	border: none;
 	font-size: 1.5em;
 	cursor: pointer;
+	transition: color 0.3s ease-out;
 	color: white;
+}
+#close-popup:hover{
+	color: grey;
 }
 #popup-middle{
 	color: black;
@@ -192,13 +198,17 @@ margin-top: 4em;
 	width: 150px;
 	background: blue;
 	padding: 1em 1.5em 1em 1.5em;
+	margin-left: auto;
+	margin-right: auto;
 	color: white;
 	border-radius: 20px;
 	border: 2px solid grey;
 	font-weight: bold;
 	text-decoration: none;
 }
-
+#link-cv:hover{
+	
+}
 #popup-footer{
 	position: absolute;
 	bottom: 0;
@@ -224,8 +234,13 @@ margin-top: 4em;
 }
 .popup-footer-link{
 	text-decoration: none;
-	color: white;
 	font-weight: bold;
+	transition: color 0.3s ease-out;
+	color: white;
+	
+}
+.popup-footer-link:hover{
+	color: grey;
 }
 
 #popup-button-div{
@@ -246,9 +261,22 @@ margin-top: 4em;
 	margin-top: 4em;
 	margin-bottom: 6em;
 	padding: 0.8em 1.6em;
-   
+    outline: 1px solid transparent;
 }
-
+#popup-button:hover{
+	animation: shake 0.5s 1; 
+	
+}
+@keyframes shake {
+  0% { transform:  rotate(0deg); }
+  15% { transform:  rotate(-2deg); }
+  30% { transform:  rotate(0deg); }
+  45% { transform:  rotate(2deg); }
+  60% { transform:  rotate(0deg); }
+  75% { transform:  rotate(-1deg); }
+  90% { transform:  rotate(1deg); }
+  100% { transform:  rotate(0deg); }
+}
 #arrow{
 	display: inline-block;
  font-size: 0.8em;	
@@ -339,8 +367,12 @@ cursor: pointer;
 }
 
 #link-mail{
-text-decoration: none;
-color: white;		
+text-decoration: none;	
+transition: color 0.3s ease-out;
+color: white;	
+}
+#link-mail:hover{
+	color: grey;
 }
 
 #skype-button{
@@ -349,7 +381,11 @@ cursor: pointer;
 
 #link-skype{
 text-decoration: none;
+transition: color 0.3s ease-out;
 color: white;		
+}
+#link-skype:hover{
+	color: grey;
 }
 
 #github-button{
@@ -358,7 +394,11 @@ cursor: pointer;
 
 #link-github{
 text-decoration: none;
+transition: color 0.3s ease-out;
 color: white;		
+}
+#link-github:hover{
+	color: grey;
 }
 
 @media screen and (max-width: 910px){
