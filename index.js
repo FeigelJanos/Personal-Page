@@ -1,6 +1,4 @@
 
-
-
 /*Cacheing the DOM*/
 
 const welcomeSlide_div = document.getElementById("message");
@@ -73,15 +71,15 @@ function languageChange(){
 	popupYoutubeLink_div.innerHTML = "Youtube channel";
 	
 	projectsH1_div.innerHTML = "Projects";
-	projectsP1_div.innerHTML = "I strongly belive that in programming the aquired knowledge in applicaton. I allways strive to create "; //Megírni
-	projectsP2_div.innerHTML = "I created several projects, some of which can be found below";
+	projectsP1_div.innerHTML = "I belive that in programming, to fully comprehend new knowledge it have to be used in practice. I wite code every day and allways have at least one work in progress project that exceeds my current abilities."; 
+	projectsP2_div.innerHTML = "I created several projects, from small algorithms to more comprehensive applications. Some of the completed applications can be found below.";
 	projectsH2_div.innerHTML = "Recent projects:";
 	projectsFirstProjectText_div.innerHTML = "Responsive survey"; 
 	projectsSecondProjectText_div.innerHTML = "Rock-paper-scissors";
 	projectsThirdProjectText_div.innerHTML = "Wizard duel";
 	
 	contactsH1_div.innerHTML = "Contacts";
-	contactsP1_div.innerHTML = "Feel free to contact me on any of the channels detailed in my CV. But here you can also find my skype and email address.";
+	contactsP1_div.innerHTML = "Feel free to contact me on any of the channels found here or in my CV. You can find my Skype and email address below.";
 	contactsH2_div.innerHTML = "Let's work together!";
 	}
 	else {
@@ -111,7 +109,7 @@ function languageChange(){
 	projectsThirdProjectText_div.innerHTML = "Varázsló párbaj";
 	
 	contactsH1_div.innerHTML = "Elérhetőségeim";
-	contactsP1_div.innerHTML = "Elérhető vagyok az önéletrajzomban megadott elérhetőségek mindegyikén. De itt megtalálod a skype profilom és az email címem is.";
+	contactsP1_div.innerHTML = "Elérhető vagyok az önéletrajzomban megadott elérhetőségek mindegyikén. De itt megtalálod a Skype profilom és az email címem is.";
 	contactsH2_div.innerHTML = "Dolgozzunk együtt!";
 	}
 }
@@ -137,7 +135,7 @@ function hamurgerActivate(){
     if (right == 0) {
       clearInterval(id);
     } else {
-      right+=5;
+      right+=9;
       hamburgerActive_div.style.right = right + 'px';
     }
   
