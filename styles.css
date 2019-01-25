@@ -294,7 +294,7 @@ margin-top: 4em;
 	margin-bottom: 6em;
 	padding: 0.8em 1.6em;
     outline: 1px solid transparent;
-	filter:drop-shadow(3px 3px 10px black);
+	filter:drop-shadow(3px 3px 10px #151515);
 }
 #popup-button:hover{
 	animation: shake 0.5s 1; 
