@@ -15,7 +15,10 @@ body{
 font-family: 'Montserrat', sans-serif;
 color: white;
 background: #151515;
-
+background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 /*#bg1{
 	position: absolute;
@@ -44,6 +47,7 @@ background: #151515;
 	top: 0em;
 	right: 3.5em;
 	margin-top: 0.6em;
+	
 }
 #hamburger-start{
 	position: absolute;
@@ -67,6 +71,7 @@ background: #151515;
   border-radius: 3px;
   z-index: 1;
   background: white;
+  filter:drop-shadow(3px 3px 2px #151515);
   transition: width 0.1s ease;
 }
 .top-menu:hover{
@@ -77,10 +82,10 @@ background: #151515;
   font-weight: bold;
   cursor: pointer;
   color: #232323;
-  border-bottom: 1px solid #757575;
   border-right: 2px solid #252525;
-  border-left: 2px solid #252525;
+  border-left: 2px solid #909090;
   transition: all 0.3s ease;
+ 
 }
 
 .hamburger:hover{
@@ -94,6 +99,7 @@ background: #151515;
 	z-index: 2;
 	margin: 0;
 	width: 225px;
+	filter:drop-shadow(5px 5px 10px #151515);
 	
 }
 #menu{
@@ -121,6 +127,7 @@ background: #151515;
 	text-align: center;
 	margin-top: 0.5em;
 	margin-bottom: 1em;
+	
 }
 #welcome-title1{
 margin-top: 4em;
@@ -162,6 +169,7 @@ margin-top: 4em;
   border-radius: 20px;
   background: white;
   text-align: center;
+  filter:drop-shadow(3px 3px 5px #151515);
 }
 @media screen and (max-width: 720px){
 .visible-pop{
@@ -226,11 +234,12 @@ margin-top: 4em;
 	border: 2px solid grey;
 	font-weight: bold;
 	text-decoration: none;
+	filter:drop-shadow(3px 3px 5px #151515);
 	transition: background 0.3s ease-out;
-	background: #151515;
+	background: #909090;
 }
 #link-cv:hover{
-	background: grey;
+	background: #151515;
 }
 #popup-footer{
 	position: absolute;
@@ -281,10 +290,11 @@ margin-top: 4em;
 	color: white;
 	background: #808080;
 	cursor: pointer;
-	margin-top: 6em;
+	margin-top: 5em;
 	margin-bottom: 6em;
 	padding: 0.8em 1.6em;
     outline: 1px solid transparent;
+	filter:drop-shadow(3px 3px 10px black);
 }
 #popup-button:hover{
 	animation: shake 0.5s 1; 
@@ -312,7 +322,24 @@ margin-top: 4em;
 padding: 0;
 margin: 0 0.5em 0 0;
 }
-
+#projects-slide{
+	background: #707070;
+	padding-top: 1em;
+	padding-bottom: 6em;
+	margin-top: 1.5em;
+	margin-right: 15vw;
+	margin-left: 15vw;
+}
+.shadow{
+	filter:drop-shadow(5px 5px 10px black);
+}
+.popup-and-shadow{
+	filter: brightness(30%) drop-shadow(5px 5px 10px black);
+}
+#projects-slide > p{
+	margin-right: 5vw;
+	margin-left: 5vw;
+}
 #project-title1{
 margin-bottom: 3em;	
 margin-top: 2em;
@@ -331,18 +358,31 @@ margin-top: 2em;
 	max-width: 250px;
 	min-width: 200px;
 	border-bottom: solid;
-	border-color: white;
+	border-color: #909090;
 	border-width: 2px;
 	margin-bottom: 1em;
+	transition: all 0.3s ease-out;
+	opacity: 0.7;
 }
+
+.project-img-active{
+	border-color:white;
+	opacity: 1;
+}
+
 .project-card{
 	position: relative;
 	border-style: solid;
-	border-color: white;
 	border-width: 2px;
 	padding-bottom: 1.5em;
 	text-decoration: none;
-	background: #707070;
+	transition: all 0.3s ease-out;
+	background: #454545;
+	border-color: #909090;
+}
+.project-card:hover{
+	background: #909090;
+	border-color: white;
 }
 
 #project-card-par1{
@@ -384,8 +424,10 @@ font-weight: bold;
 	justify-content: center;
 	grid-gap: 2em 1.5em;
 	text-align: center;
-	margin-bottom: 3em;
-	
+	background: grey;
+	padding-bottom: 2em;
+	padding-top: 2em;
+	filter:drop-shadow(0px 5px 10px black);
 }
 #mail-button{
 cursor: pointer;
@@ -396,10 +438,10 @@ text-decoration: none;
 margin-bottom: 2em;
 font-size: 1.1em;	
 transition: all 0.3s ease-out;
-color: white;	
+color: black;	
 }
 #link-mail:hover{
-	color: grey;
+	color: white;
 	font-size: 1.2em;
 }
 
@@ -411,10 +453,10 @@ cursor: pointer;
 text-decoration: none;
 font-size: 1.1em;
 transition: all 0.3s ease-out;
-color: white;		
+color: black;		
 }
 #link-skype:hover{
-	color: grey;
+	color: white;
 	font-size: 1.2em;
 }
 
@@ -426,10 +468,10 @@ cursor: pointer;
 text-decoration: none;
 font-size: 1.1em;
 transition: all 0.3s ease-out;
-color: white;		
+color: black;		
 }
 #link-github:hover{
-	color: grey;
+	color: white;
 	font-size: 1.2em;
 }
 
@@ -450,6 +492,17 @@ color: white;
 		margin-top: 3em;
 		margin-bottom: 1em;
 	}
+	#projects-slide{
+	
+	padding-bottom: 6em;
+	padding-top: 0;
+	margin-top: 4em;
+	margin-right: 0.8em;
+	margin-left: 0.8em;
+}
+#projects-slide > h1{
+	padding-top: 2em;
+}
 	#project-title1{
 		margin-top: 3em;
 		margin-bottom: 2em;		
@@ -481,3 +534,4 @@ color: white;
 	}
 	
 }
+
