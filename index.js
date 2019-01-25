@@ -1,4 +1,5 @@
 
+
 /*Cacheing the DOM*/
 
 const welcomeSlide_div = document.getElementById("message");
@@ -41,6 +42,9 @@ const projectsSecondProject_div = document.getElementById("link-project2");
 const projectsSecondProjectText_div = document.getElementById("project-card-par2");
 const projectsThirdProject_div = document.getElementById("link-project3");
 const projectsThirdProjectText_div = document.getElementById("project-card-par3");
+const projectImage1_div = document.getElementById("project1-img");
+const projectImage2_div = document.getElementById("project2-img");
+const projectImage3_div = document.getElementById("project3-img");
 
 const contactsH1_div = document.getElementById("contact-title1");
 const contactsP1_div = document.getElementById("contact-par1");
@@ -54,7 +58,7 @@ function languageChange(){
 	if (hamburgerOuterText_div.innerHTML == ' Menü '){
 		
 	hamburgerOuterText_div.innerHTML= ' Menu ';
-	hamburgerLanguageButton_div.innerHTML = 'Nyelv Váltás';
+	hamburgerLanguageButton_div.innerHTML = 'Magyar';
 	hamburgerWelcomeButton_div.innerHTML = 'Welcome';
 	hamburgerProjectsButton_div.innerHTML = 'Projects';
 	hamburgerContactsButton_div.innerHTML = 'Contacts';
@@ -84,7 +88,7 @@ function languageChange(){
 	}
 	else {
 	hamburgerOuterText_div.innerHTML = ' Menü ';
-	hamburgerLanguageButton_div.innerHTML = 'Change Language';
+	hamburgerLanguageButton_div.innerHTML = 'English';
 	hamburgerWelcomeButton_div.innerHTML = 'Üdvözlet';
 	hamburgerProjectsButton_div.innerHTML = 'Projektek';
 	hamburgerContactsButton_div.innerHTML = 'Elérhetőségek';
@@ -152,7 +156,8 @@ function popupClose(){
 	hamburgerInactive_div.classList.remove("popup-active-darken"); 
 	popupButtonContainer_div.classList.remove("popup-active-darken");
 	welcomeSlide_div.classList.remove("popup-active-darken");
-	projectSlide_div.classList.remove("popup-active-darken");
+	projectSlide_div.classList.remove("popup-and-shadow");
+	projectSlide_div.classList.add("shadow");
 	contactSlide_div.classList.remove("popup-active-darken");
 	
 	hamburgerInactive_div.addEventListener("click", hamurgerActivate);
@@ -169,7 +174,8 @@ hamburgerOuterText_div.classList.add("popup-active-darken"); //Everything become
 hamburgerInactive_div.classList.add("popup-active-darken"); 
 popupButtonContainer_div.classList.add("popup-active-darken");
 welcomeSlide_div.classList.add("popup-active-darken");
-projectSlide_div.classList.add("popup-active-darken");
+projectSlide_div.classList.remove("shadow");
+projectSlide_div.classList.add("popup-and-shadow");
 contactSlide_div.classList.add("popup-active-darken");
 
 hamburgerInactive_div.removeEventListener("click", hamurgerActivate, false); //Hamburger menu does not react
@@ -177,13 +183,41 @@ hamburgerInactive_div.removeEventListener("click", hamurgerActivate, false); //H
 popupCloseButton_div.addEventListener('click', popupClose); //If you click on the x popup closes
 }
 
+/**/
+function projectInactive(){
+	projectImage1_div.classList.remove("project-img-active");
+	projectImage2_div.classList.remove("project-img-active");
+	projectImage3_div.classList.remove("project-img-active");
+}
+
+/**/
+function projectHover3(){
+	projectImage3_div.classList.add("project-img-active");
+	projectsThirdProject_div.addEventListener("mouseout", projectInactive);
+}
+
+/**/
+function projectHover2(){
+	projectImage2_div.classList.add("project-img-active");
+	projectsSecondProject_div.addEventListener("mouseout", projectInactive);
+}
+
+/**/
+function projectHover1(){
+	projectImage1_div.classList.add("project-img-active");
+	projectsFirstProject_div.addEventListener("mouseout", projectInactive);
+}
+
 /*Main fuction. First thing to start*/
 function main(){
 	hamburgerLanguageButton_div.addEventListener("click", languageChange);
 	hamburgerInactive_div.addEventListener("click", hamurgerActivate);
 	welcomePopupOpenerButton_div.addEventListener("click", popupActivate);
-	
+	projectsFirstProject_div.addEventListener("mouseover", projectHover1);
+	projectsSecondProject_div.addEventListener("mouseover", projectHover2);
+	projectsThirdProject_div.addEventListener("mouseover", projectHover3);
 }
 
 /*Starting program*/
 main();
+
