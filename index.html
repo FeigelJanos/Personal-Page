@@ -1,147 +1,149 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
-    <meta HTTP-EQUIV="Content-Type" Content="text/html; Charset=iso-8859-2">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="styles.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-	<title>Portfolio Page</title>
+  <meta HTTP-EQUIV="Content-Type" Content="text/html; Charset=iso-8859-2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Portfolio Page</title>
 </head>
-<body >
-<div id="bg1"></div>
-<div id="welcome-slide">
 
+<body>
+  <div id="bg1"></div>
+  <div id="welcome-slide">
 
+    <!-- Hamburger Menu Starts -->
 
-<!-- Hamburger Menu Starts -->
-
-<span class="hamburger-menu">
+    <span class="hamburger-menu">
 <h3 id="menu-title" class="title"> Menü </h3>
 <div id="hamburger-start">
 
     <span id="hspan1" class="top-menu"></span>
     <span id="hspan2" class="top-menu"></span>
     <span id="hspan3" class="top-menu"></span>
- </div>
- <div  id="menu-contents">
-    <ul id="menu" >
+  </div>
+  <div id="menu-contents">
+    <ul id="menu">
       <li id="menu-language" class="hamburger">English</li>
-      <a href="#welcome-slide" id="menu-welcome"><li class="hamburger" id="welcome-text">Üdvözlet</li></a>
-      <a href="#projects-slide" id="menu-projects"><li class="hamburger" id="project-text">Projektek</li></a>
-      <a href="#contacts-slide" id="menu-contact"><li class="hamburger" id="contact-text">Elérhetőségek</li></a>
+      <a href="#welcome-slide" id="menu-welcome">
+        <li class="hamburger" id="welcome-text">Üdvözlet</li>
+      </a>
+      <a href="#projects-slide" id="menu-projects">
+        <li class="hamburger" id="project-text">Projektek</li>
+      </a>
+      <a href="#contacts-slide" id="menu-contact">
+        <li class="hamburger" id="contact-text">Elérhetőségek</li>
+      </a>
     </ul>
-</div>
-</span>
-<!-- Hamburger Menu Ends -->
+  </div>
+  </span>
+  <!-- Hamburger Menu Ends -->
 
-<!-- Welcome message starts -->
-<div id="message">
-  <h1 id="welcome-title1" class="title">Üdvözlet! János vagyok.</h1>
-  <h2 id="welcome-title2" class="title">Webfejlesztő</h2>
+  <!-- Welcome message starts -->
+  <div id="message">
+    <h1 id="welcome-title1" class="title">Üdvözlet! János vagyok.</h1>
+    <h2 id="welcome-title2" class="title">Webfejlesztő</h2>
 
-   <p id="welcome-par1">Korábbi munkáim során főként üzleti kapcsolattartással foglalkoztam. Azonban egyre inkább magával ragadott a programozás világa,
-   ezért most front end webfejlesztőként keresek állást.</p> 
+    <p id="welcome-par1">Korábbi munkáim során főként üzleti kapcsolattartással foglalkoztam. Azonban egyre inkább magával ragadott a programozás világa, ezért most front end webfejlesztőként keresek állást.</p>
 
-  <p id="welcome-par2">A webes technológiák terén minden érdekel, igyekszem lépést tartani az újdonságokkal. 
-  Célom a gyors, felhasználóbarát weboldalak és appok készítése. </p> 
-</div>
-<!-- Welcome message ends -->
+    <p id="welcome-par2">A webes technológiák terén minden érdekel, igyekszem lépést tartani az újdonságokkal. Célom a gyors, felhasználóbarát weboldalak és appok készítése. </p>
+  </div>
+  <!-- Welcome message ends -->
 
-<!-- Popup window starts -->
+  <!-- Popup window starts -->
 
   <div id="popup-div" class="invisible">
-   <div id="popup-header">
-   
-   <button id="close-popup">x</button>
-     <h2 id="popup-title" >Curriculum Vitae</h2>
-	 
-	 </div>
-	 
-	<div id="popup-middle">
-    <p id="popup-par1">Töltsd le az önéletrajzom:</p>
-    <a href="Feigel_Janos_CV.pdf" download id="link-cv">Letöltés</a>
-	</div>
-	
+    <div id="popup-header">
+
+      <button id="close-popup">x</button>
+      <h2 id="popup-title">Curriculum Vitae</h2>
+
+    </div>
+
+    <div id="popup-middle">
+      <p id="popup-par1">Töltsd le az önéletrajzom:</p>
+      <a href="Feigel_Janos_CV.pdf" download id="link-cv">Letöltés</a>
+    </div>
+
     <div id="popup-footer">
-	<p id="popup-par2">Itt megtalálod a projekjteim:</p>
-	<div id="footer-grid">
-	<a href="https://github.com/FeigelJanos" target="blank" id="link-git" class="popup-footer-link"><i class="fab fa-github-square"></i> GitHub</a>
-	<a href="https://codepen.io/collection/XwrBMd/#" target="blank" id="link-code" class="popup-footer-link"><i class="fab fa-codepen"></i> Code Pen</a>
-	<a href="" target="blank" id="link-yt" class="popup-footer-link"><i class="fab fa-youtube"></i> Youtube csatorna</a> 
-	</div>
+      <p id="popup-par2">Itt megtalálod a projekjteim:</p>
+      <div id="footer-grid">
+        <a href="https://github.com/FeigelJanos" target="blank" id="link-git" class="popup-footer-link"><i class="fab fa-github-square"></i> GitHub</a>
+        <a href="https://codepen.io/collection/XwrBMd/#" target="blank" id="link-code" class="popup-footer-link"><i class="fab fa-codepen"></i> Code Pen</a>
+        <a href="" target="blank" id="link-yt" class="popup-footer-link"><i class="fab fa-youtube"></i> Youtube csatorna</a>
+      </div>
     </div>
   </div>
   <!-- Popup window ends -->
-  
+
   <div id="popup-button-div">
-  <Button id="popup-button">
+    <Button id="popup-button">
   <p id="popup-par3">Keress bátran </p><i class="fas fa-arrow-right" id="arrow"></i>
 	</Button>
   </div>
-  
-  
-</div>
 
-<div id="projects-slide" class="shadow">
-<h1 id="project-title1" class="title">Projektjeim</h1>
-<p id="project-par1">Bár még nem rendelkezem professzionális tapasztalatokkal, úgy gondolom, hogy a megszerzett tudás akkor válik igazán hasznossá, ha gyakorlatban is alkalmazható. Ezért mindíg szánok időt arra, hogy az új ismereteket egy-egy projekt keretében is kipróbáljam.</p>
-<p id="project-par2">Számos projektet készítettem, amelyek közül néhány alább elérhető.</p>
+  </div>
 
-<h2 id="project-title2" class="title">Friss projektjeim:</h2> 
-    
+  <div id="projects-slide" class="shadow">
+    <h1 id="project-title1" class="title">Projektjeim</h1>
+    <p id="project-par1">Bár még nem rendelkezem professzionális tapasztalatokkal, úgy gondolom, hogy a megszerzett tudás akkor válik igazán hasznossá, ha gyakorlatban is alkalmazható. Ezért mindíg szánok időt arra, hogy az új ismereteket egy-egy projekt keretében is kipróbáljam.</p>
+    <p id="project-par2">Számos projektet készítettem, amelyek közül néhány alább elérhető.</p>
+
+    <h2 id="project-title2" class="title">Friss projektjeim:</h2>
+
     <div id="web-projects">
-    
-    
-       <a class="project-card" id="link-project1" href="https://feigeljanos.github.io/First_Survey/" target="blank">
-		<div class="card-container">
-			<img  class="project-img" src="https://i.postimg.cc/GtNQpLcv/Kerdoiv.png" alt="Reszponzív kérdőív" id="project1-img">
-			<p id="project-card-par1">Reszponzív kérdőív</p>
-		</div>
-	   </a>
-     
-       <a class="project-card" id="link-project2" href="https://feigeljanos.github.io/Ko_Papir_Ollo/" target="blank">
-		<div class="card-container">
-			<img  class="project-img" src="https://i.postimg.cc/J4Dx2kqx/Ko-Papir-Ollo.png" alt="Kő-papír-olló" id="project2-img"> 
-			<p id="project-card-par2">Kő-papír-olló</p>
-		</div>
-	   </a>
-    
-	<a class="project-card" id="link-project3" href="https://feigeljanos.github.io/Wizards-Game/" target="blank" >
-      <div class="card-container">
-		<img   class="project-img" src="https://i.postimg.cc/T3n9RvBW/V2.png" alt="Varázsló párbaj" id="project3-img"> 
-		<p id="project-card-par3">Varázsló párbaj</p> 
-	  </div>
-    </a>
-	
+
+      <a class="project-card" id="link-project1" href="https://feigeljanos.github.io/First_Survey/" target="blank">
+        <div class="card-container">
+          <img class="project-img" src="https://i.postimg.cc/GtNQpLcv/Kerdoiv.png" alt="Reszponzív kérdőív" id="project1-img">
+          <p id="project-card-par1">Reszponzív kérdőív</p>
+        </div>
+      </a>
+
+      <a class="project-card" id="link-project2" href="https://feigeljanos.github.io/Ko_Papir_Ollo/" target="blank">
+        <div class="card-container">
+          <img class="project-img" src="https://i.postimg.cc/J4Dx2kqx/Ko-Papir-Ollo.png" alt="Kő-papír-olló" id="project2-img">
+          <p id="project-card-par2">Kő-papír-olló</p>
+        </div>
+      </a>
+
+      <a class="project-card" id="link-project3" href="https://feigeljanos.github.io/Wizards-Game/" target="blank">
+        <div class="card-container">
+          <img class="project-img" src="https://i.postimg.cc/T3n9RvBW/V2.png" alt="Varázsló párbaj" id="project3-img">
+          <p id="project-card-par3">Varázsló párbaj</p>
+        </div>
+      </a>
+
     </div>
 
-</div>
+  </div>
 
-<div id="contacts-slide">
-<h1 id="contact-title1" class="title">Elérhetőségeim</h1>
-<p id="contact-par1">Elérhető vagyok az önéletrajzomban megadott elérhetőségek mindegyikén. De itt megtalálod a Skype profilom és az email címem is.</p>
+  <div id="contacts-slide">
+    <h1 id="contact-title1" class="title">Elérhetőségeim</h1>
+    <p id="contact-par1">Elérhető vagyok az önéletrajzomban megadott elérhetőségek mindegyikén. De itt megtalálod a Skype profilom és az email címem is.</p>
 
-<h2 id="contact-title2" class="title">Dolgozzunk együtt!</h2>
+    <h2 id="contact-title2" class="title">Dolgozzunk együtt!</h2>
 
-<div class="contacts-footer">
-<div id="mail-button">
-<a id="link-mail" href="mailto:feigel_janos@yahoo.com"><i class="fas fa-envelope"></i> Mail </a>
-</div>
+    <div class="contacts-footer">
+      <div id="mail-button">
+        <a id="link-mail" href="mailto:feigel_janos@yahoo.com"><i class="fas fa-envelope"></i> Mail </a>
+      </div>
 
-<div id="skype-button">    
-<a id="link-skype" href="skype:feigel_janos?call"><i class="fab fa-skype"></i> Skype </a>
-</div>
+      <div id="skype-button">
+        <a id="link-skype" href="skype:feigel_janos?call"><i class="fab fa-skype"></i> Skype </a>
+      </div>
 
+      <div id="github-button">
+        <a id="link-github" href="https://github.com/FeigelJanos/" target="blank"><i class="fab fa-github-square"></i> GitHub </a>
+      </div>
+    </div>
+  </div>
 
-<div id="github-button">    
-<a id="link-github" href="https://github.com/FeigelJanos/" target="blank"><i class="fab fa-github-square"></i> GitHub </a>
-</div>
-</div>
-</div>
-
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
+
 </html>
