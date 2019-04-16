@@ -69,8 +69,7 @@ function languageChange() {
     welcomeH2_div.innerHTML = " A web developer";
     welcomeP1_div.innerHTML =
       "I'm a junior developer ready to enter the major leagues. I try my best to create great user experience with performant and well designed apps and websites. And to keep up with the newest techniques and tools in development.";
-    welcomeP2_div.innerHTML =
-      "I am interested in all aspects of the creation of web applications, and eager to hit the ground running in an established team.";
+    welcomeP2_div.innerHTML = "I am interested in all aspects of the creation of web applications, and eager to hit the ground running in an established team.";
     welcomePopupOpenerText_button.innerHTML = "Hire Me";
 
     popupP1_div.innerHTML = "Grab my CV here:";
@@ -79,18 +78,15 @@ function languageChange() {
     popupYoutubeLink_div.innerHTML = "Youtube channel";
 
     projectsH1_div.innerHTML = "Projects";
-    projectsP1_div.innerHTML =
-      "I belive that in programming, to fully comprehend new knowledge it have to be used in practice. I wite code every day and allways have at least one work in progress project that exceeds my current abilities.";
-    projectsP2_div.innerHTML =
-      "I created several projects, from small algorithms to more comprehensive applications. Some of the completed applications can be found below.";
+    projectsP1_div.innerHTML = "I belive that in programming, to fully comprehend new knowledge it have to be used in practice. I wite code every day and allways have at least one work in progress project that exceeds my current abilities.";
+    projectsP2_div.innerHTML = "I created several projects, from small algorithms to more comprehensive applications. Some of the completed applications can be found below.";
     projectsH2_div.innerHTML = "Recent projects:";
     projectsFirstProjectText_div.innerHTML = "Random quote";
     projectsSecondProjectText_div.innerHTML = "Rock-paper-scissors";
     projectsThirdProjectText_div.innerHTML = "Wizard duel";
 
     contactsH1_div.innerHTML = "Contacts";
-    contactsP1_div.innerHTML =
-      "Feel free to contact me on any of the channels found here or in my CV. You can find my Skype and email address below.";
+    contactsP1_div.innerHTML = "Feel free to contact me on any of the channels found here or in my CV. You can find my Skype and email address below.";
     contactsH2_div.innerHTML = "Let's work together!";
   } else {
     hamburgerOuterText_div.innerHTML = " Menü ";
@@ -101,10 +97,8 @@ function languageChange() {
 
     welcomeH1_div.innerHTML = "Üdvözlet! János vagyok.";
     welcomeH2_div.innerHTML = "Webfejlesztő";
-    welcomeP1_div.innerHTML =
-      "Korábbi munkáim során főként üzleti kapcsolattartással foglalkoztam. Azonban egyre inkább magával ragadott a programozás világa, ezért most front end webfejlesztőként keresek állást.";
-    welcomeP2_div.innerHTML =
-      "A webes technológiák terén minden érdekel, igyekszem lépést tartani az újdonságokkal. Célom a gyors, felhasználóbarát weboldalak és appok készítése. ";
+    welcomeP1_div.innerHTML = "Korábbi munkáim során főként üzleti kapcsolattartással foglalkoztam. Azonban egyre inkább magával ragadott a programozás világa, ezért most front end webfejlesztőként keresek állást.";
+    welcomeP2_div.innerHTML = "A webes technológiák terén minden érdekel, igyekszem lépést tartani az újdonságokkal. Célom a gyors, felhasználóbarát weboldalak és appok készítése. ";
     welcomePopupOpenerText_button.innerHTML = "Keress bátran";
 
     popupP1_div.innerHTML = "Töltsd le az önéletrajzom:";
@@ -113,18 +107,15 @@ function languageChange() {
     popupYoutubeLink_div.innerHTML = "Youtube csatorna";
 
     projectsH1_div.innerHTML = "Projektjeim";
-    projectsP1_div.innerHTML =
-      "Bár még nem rendelkezem professzionális tapasztalatokkal, úgy gondolom, hogy a megszerzett tudás akkor válik igazán hasznossá, ha gyakorlatban is alkalmazható. Ezért mindíg szánok időt arra, hogy az új ismereteket egy-egy projekt keretében is kipróbáljam.";
-    projectsP2_div.innerHTML =
-      "Számos projektet készítettem, amelyek közül néhány alább elérhető.";
+    projectsP1_div.innerHTML = "Bár még nem rendelkezem professzionális tapasztalatokkal, úgy gondolom, hogy a megszerzett tudás akkor válik igazán hasznossá, ha gyakorlatban is alkalmazható. Ezért mindíg szánok időt arra, hogy az új ismereteket egy-egy projekt keretében is kipróbáljam.";
+    projectsP2_div.innerHTML = "Számos projektet készítettem, amelyek közül néhány alább elérhető.";
     projectsH2_div.innerHTML = "Friss projektjeim:";
     projectsFirstProjectText_div.innerHTML = "Idézet generátor";
     projectsSecondProjectText_div.innerHTML = "Kő-papír-olló";
     projectsThirdProjectText_div.innerHTML = "Varázsló párbaj";
 
     contactsH1_div.innerHTML = "Elérhetőségeim";
-    contactsP1_div.innerHTML =
-      "Elérhető vagyok az önéletrajzomban megadott elérhetőségek mindegyikén. De itt megtalálod a Skype profilom és az email címem is.";
+    contactsP1_div.innerHTML = "Elérhető vagyok az önéletrajzomban megadott elérhetőségek mindegyikén. De itt megtalálod a Skype profilom és az email címem is.";
     contactsH2_div.innerHTML = "Dolgozzunk együtt!";
   }
 }
